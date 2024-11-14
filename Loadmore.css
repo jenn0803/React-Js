@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #c2e2ff;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+ul#itemList {
+    list-style: none;
+    padding: 0;
+}
+
+ul#itemList li {
+    padding: 10px;
+    background-color: #a1c6f9;
+    border: 1px solid #c4daf8;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#loadMoreBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #356dce;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border:2px solid #00008b;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#loadMoreBtn:hover {
+    background-color: #164596;
+}
+
+
+

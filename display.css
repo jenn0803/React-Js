@@ -1,0 +1,93 @@
+body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f4f7f6, #e3f2fd);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Main container */
+        .container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 1000px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.02);
+        }
+
+        /* Title styling */
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /* Data container styling */
+        .data-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Individual data item styling */
+        .data-item {
+            background: linear-gradient(135deg, #fffae5, #fff3b0);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+            width: 260px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .data-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Heading within data items */
+        .data-item h2 {
+            font-size: 1.5rem;
+            color: #444;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        /* Paragraph text within data items */
+        .data-item p {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Button styling */
+        .data-item button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #4caf50;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.3s ease;
+        }
+
+        .data-item button:hover {
+            background-color: #388e3c;
+        }

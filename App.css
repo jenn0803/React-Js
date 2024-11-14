@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+/* Main Container */
+.task-manager {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Header */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Task List */
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9fafc;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.1s ease;
+}
+
+.task-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Task Text */
+.task-item span {
+  flex-grow: 1;
+  font-size: 1rem;
+  color: #34495e;
+  margin-left: 8px;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #95a5a6;
+}
+
+/* Checkbox */
+.task-item input[type="checkbox"] {
+  margin-right: 10px;
+  accent-color: #4caf50;
+}
+
+/* Delete Button */
+.task-item button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Form */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input[type="text"] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdfe3;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+  border-color: #4caf50;
+}
+
+/* Submit Button */
+form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button[type="submit"]:hover {
+  background-color: #388e3c;
+}
+
+/* No Tasks Message */
+.no-tasks {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  margin-top: 20px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time chat application</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Real Time Chat Application</div>
+      <center>  <h4>This chat is online</h4></center>
+        <div id="MessageContainer">
+            
+        </div>
+        <div class="typeContainer">
+            <div class="typeSection" id="clientTypeSection">
+                <label for="clientInput" class="label">Sender</label>
+                <input type="text" id="clientInput" class="input"/>
+                <button id="clientSendBtn" onclick="sendMsg('clientInput', 'clientMsgStyle');" class="btn">send</button>
+            </div>
+            <div class="typeSection" id="developerTypeSection">
+                <label for="developerInput" class="label">Reciver</label>
+                <input type="text" id="developerInput"  class="input"/>
+                <button id="developerSendBtn" onclick="sendMsg('developerInput', 'developerMsgStyle');" class="btn">send</button>
+            </div>
+        </div>
+    </div>
+    <script src="chat.js"></script>
+</body>
+</html>

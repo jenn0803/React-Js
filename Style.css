@@ -1,0 +1,146 @@
+ body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: #333;
+        }
+
+        h1, h2 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            background-color: #eef7fa;
+            padding: 10px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        form, .brd {
+            border: 2px solid #56e0f0;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        form:hover, .brd:hover {
+            transform: scale(1.02);
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select {
+            width: 100%;
+            height: 40px;
+            margin: 8px 0;
+            padding: 0 10px;
+            background-color: #f9f9f9;
+            border: none;
+            border-bottom: 2px solid #56e0f0;
+            outline: none;
+            transition: all 0.3s ease;
+            font-size: 16px;
+        }
+
+        input:focus, select:focus {
+            border-color: #3399cc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: #56e0f0;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #3399cc;
+            transform: scale(1.05);
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        #myDiv {
+            width: 100%;
+            max-width: 300px;
+            height: 150px;
+            background-color: lightblue;
+            display: none;
+            margin: 10px 0;
+            padding: 15px;
+            border: 2px solid #007bff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #slider {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #slider img {
+            width: 100%;
+            height: 100%;
+            display: none;
+            border-radius: 8px;
+        }
+
+        #slider img:first-child {
+            display: block;
+        }
+
+        .slider-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .slider-buttons button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            background-color: #3399cc;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .slider-buttons button:hover {
+            background-color: #007bff;
+        }
